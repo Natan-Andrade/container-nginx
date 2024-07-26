@@ -43,3 +43,14 @@ docker compose up
 ```
 
 Após iniciar o contêiner, abra um navegador e acesse http://localhost:8080. Você deverá ver a página HTML que você definiu em index.html.
+- Para listar o container em andamento, basta utilizar o comando:
+   ```bash
+   docker container ls
+   ```
+- Para parar o container e exclui-lo:
+   ```bash
+   #parar
+   docker container stop <id_do_container>
+   #deletar
+   docker rm -f <id_do_container>
+   ```
