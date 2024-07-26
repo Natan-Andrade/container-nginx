@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  web:
+    # Instrui o Docker Compose a construir a imagem a partir do Dockerfile no diretório atual
+    build: .
+    # Mapeia a porta 80 (default do Nginx) do container para a porta 8080 na máquina local
+    ports: 
+      - "8080:80"
