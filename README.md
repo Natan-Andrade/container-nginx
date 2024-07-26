@@ -42,7 +42,7 @@ docker compose build
 docker compose up
 ```
 
-Após iniciar o contêiner, abra um navegador e acesse http://localhost:8080. Você deverá ver a página HTML que você definiu em index.html.
+Após iniciar o contêiner, abra um navegador e acesse http://localhost:8080. Você deverá ver a página HTML.
 - Para listar o container em andamento, basta utilizar o comando:
    ```bash
    docker container ls
