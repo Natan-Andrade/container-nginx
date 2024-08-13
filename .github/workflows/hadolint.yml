@@ -21,9 +21,5 @@ jobs:
         wget -O /usr/local/bin/hadolint https://github.com/hadolint/hadolint/releases/download/v2.12.0/hadolint-Linux-x86_64
         chmod +x /usr/local/bin/hadolint
     
-    - name: List files for debugging
-      run: ls -R
-
-    - name: Run Hadolint
-      run: hadolint ../../dockerfile
-
+    - name: Run Hadolint on all Dockerfiles
+      run: find . -name 'dockerfile' -exec hadolint {} +
