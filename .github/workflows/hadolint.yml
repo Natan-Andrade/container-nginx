@@ -19,4 +19,4 @@ jobs:
     - name: Run Hadolint
       uses: docker://ghcr.io/hadolint/hadolint
       with:
-        args: "Dockerfile"
+        args: hadolint Dockerfile
