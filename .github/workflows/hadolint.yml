@@ -22,4 +22,4 @@ jobs:
         chmod +x /usr/local/bin/hadolint
     
     - name: Run Hadolint on all Dockerfiles
-      run: find . -name 'dockerfile' -exec hadolint {} +
+      run: find . -name 'Dockerfile' -exec hadolint {} +
